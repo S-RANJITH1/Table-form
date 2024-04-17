@@ -2,7 +2,6 @@ const form = document.createElement("form");
 form.id = "form";
 const formGroup = document.createElement("div");
 formGroup.classList.add("form-group");
-
 const firstNameLabel = createLabel("First Name");
 const firstNameInput = createInput(
   "text",
@@ -163,7 +162,7 @@ function submitForm(event) {
     document.querySelector('input[name="gender"]:checked').value,
     foodChoiceInput.value,
     StateInput.value,
-    CountryInput
+    CountryInput.value
   ];
 
   const newRow = tbody.insertRow();
